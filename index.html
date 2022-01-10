@@ -18,7 +18,7 @@
     <div class="container">
         <h1>Contact Form Template</h1>
         <div class="p-3 border border-2 rounded shadow-lg  bg-light" id="formContainingDiv">
-            <form name="contactForm" class="row g-3 p-2">
+            <form name="contactForm" class="row g-3 p-2" netlify>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 col-md-6 form-group">
@@ -53,8 +53,31 @@
                             <textarea type="text" class="form-control" name="message" rows="4"
                                 placeholder="Write your meassage here"></textarea>
                         </div>
+                        <div class="col-12 form-group">
+                            <label class="form-label">How did you hear about us?</label>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Radio</label>
+                                <input type="checkbox" valuie="radio" class="form-check-input" name="funnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Print</label>
+                                <input type="checkbox" valuie="print" class="form-check-input" name="funnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Website</label>
+                                <input type="checkbox" valuie="website" class="form-check-input" name="funnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Flyer</label>
+                                <input type="checkbox" valuie="flyer" class="form-check-input" name="funnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel" class="form-label">Other</label>
+                                <input type="checkbox" valuie="other" class="form-check-input" name="funnel" />
+                            </div>
+                        </div>
                         <div class="col-12 d-flex justify-content-center pt-2">
-                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>                            
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                     </div>
                 </div>
